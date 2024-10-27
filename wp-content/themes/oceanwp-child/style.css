@@ -1,6 +1,6 @@
 /*
 Theme Name: OceanWP Child
-Theme URI: https://oceanwp.org/
+Theme URI: https://localhost/P6%20_PLANTY/wordpress/ 
 Template: oceanwp
 Author: OceanWP
 Author URI: https://oceanwp.org/about-oceanwp/
@@ -11,3 +11,298 @@ Updated: 2024-08-02 17:53:28
 
 */
 
+
+/* Style général */
+body {
+    font-family: Syne, sans-serif;
+}
+
+#submit-rencontrer {
+    width: 200px;
+    /* Ajustez la largeur selon vos besoins */
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Header */
+.admin {
+    display: flex;
+}
+
+/* Bouton commander positionnement */
+#menu-item-964 {
+    order: 3;
+}
+
+#menu-item-964 a {
+    color: #ffffff;
+    background-color: #E0B9B4;
+    height: 8rem;
+    width: 20rem;
+    justify-content: center;
+}
+
+#menu-item-964 a:hover {
+    background-color: #C02E44;
+}
+
+#menu-item-964 a:focus {
+    background-color: #C02E44;
+}
+
+#menu-item-471 a {
+    height: 4rem;
+    padding-top: 4rem;
+}
+
+.e-flex {
+    position: relative;
+    
+}
+
+.hfe-menu-item:active {
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+    outline: none !important;
+    /* Pour supprimer l'outline si nécessaire */
+}
+
+
+.container_principal {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Alignement horizontal des vignettes */
+.alignement_horizontal {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.alignement_verticale_vignette {
+    text-align: center;
+}
+
+/* Style pour la barre horizontale */
+.barre_horizontale {
+    width: 800px;
+    /* Largeur de la barre */
+    height: 60px;
+    /* Hauteur de la barre */
+    border-top: 1px solid #ccc;
+    /* Bordure fine de 1px sur le haut */
+    margin: 0 auto;
+    /* Centrage horizontal automatique */
+    opacity: 1;
+    /* La rendre visible */
+}
+
+/* Style pour la barre verticale */
+.barre_verticale {
+    width: 0px;
+    /* Largeur très fine pour une barre verticale */
+    height: 410px;
+    /* Hauteur de la barre */
+    margin-top: 20px;
+    border-left: 1px solid #ccc;
+    margin: 20px;
+    /* Crée une bordure fine sur le côté gauche (pour la verticalité) */
+}
+
+/* Style des champs de saisie */
+input[type="text"],
+input[type="email"] {
+    width: 300px;
+    /* Largeur des champs de saisie modifiée */
+    height: 55px;
+    /* Hauteur des champs de saisie modifiée */
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 7px 0px 0px 0px;
+    /* Bords arrondis spécifiques */
+    background-color: white;
+    /* Couleur de fond des champs en blanc */
+    color: white;
+    opacity: 1;
+    /* Rendre les champs visibles */
+}
+
+/* Alignement des formulaires */
+.alignement_horizontal_form {
+    display: flex;
+    justify-content: space-between;
+    /* Espacement entre les deux colonnes */
+}
+
+.alignement_verticale {
+    display: flex;
+    flex-direction: column;
+    width: 383px;
+    /* Largeur des champs */
+}
+
+/* Ajustement de la taille des images */
+.alignement_verticale_vignette img {
+    width: 192.53px;
+    /* Largeur spécifiée */
+    height: 128.36px;
+    /* Hauteur spécifiée */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style pour le titre "Votre commande" */
+.commande {
+    width: 290px;
+    height: 36px;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 36px;
+}
+
+/* Couleur et style des titres de section */
+.section-title {
+    color: white;
+    /* Couleur blanche */
+    font-size: 30px;
+}
+
+.section-title2 {
+    color: white;
+    /* Couleur blanche */
+    font-size: 20px;
+}
+
+/* Style du bouton "commander" */
+input[type="submit"] {
+    width: 198px;
+    /* Largeur du bouton modifiée */
+    height: 55px;
+    /* Hauteur du bouton modifiée */
+    padding: 9px 57px 9px 56px;
+    /* Espacement interne du bouton */
+    background-color: #E0B9B4;
+    /* Changer la couleur de fond du bouton */
+    color: white;
+    border: none;
+    border-radius: 5px 0px 0px 0px;
+    /* Bords arrondis spécifiques */
+    margin-left: 60px;
+    cursor: pointer;
+    opacity: 1;
+    /* Rendre le bouton visible */
+    justify-content: center;
+}
+
+.rang_form {
+    display: flex;
+    /* Utilisation de flexbox */
+    justify-content: center !important; /* Centre le contenu horizontalement */
+    /* Centre le contenu horizontalement */
+}
+
+input[type="submit"]:hover {
+    background-color: #d8a49d;
+    /* Couleur légèrement plus foncée au survol */
+}
+
+.nbre_fraise,
+.nbre_pamplemousse,
+.nbre_framboise,
+.nbre_citron {
+    width: 39px;
+    /* Définit une largeur fixe ou adaptative selon ton design */
+    height: 56px;
+    top: 523px;
+    /* Position en haut (verticalement) */
+    left: 813px;
+    text-align: center;
+    /* Centre le texte à l'intérieur du champ */
+    padding: 30px;
+    /* Ajoute un peu de padding pour un meilleur espacement interne */
+    font-size: 16px;
+    /* Ajuste la taille du texte pour bien l'afficher */
+    box-sizing: border-box;
+    /* Assure que la largeur inclut le padding */
+}
+
+.wpcf7-form-control.wpcf7-submit {
+    display: block !important; /* Assure que le bouton est un élément de bloc */
+    margin: 0 auto !important; /* Centre le bouton */
+}
+/* Responsive styles */
+/* Style par défaut (pour les grands écrans) */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Pour les écrans larges (ordinateurs de bureau) */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Pour les tablettes (portrait et paysage) */
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .menu-link {
+        padding: 10px;
+    }
+}
+
+/* Pour les téléphones en mode paysage */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .menu-link {
+        padding: 8px;
+    }
+}
+
+/* Pour les téléphones en mode portrait */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .menu-link {
+        padding: 5px;
+    }
+    /* Ajoute une règle pour les petits écrans */
+
+    .alignement_verticale_vignette img {
+        margin-bottom: 20px; /* Assure un espace de 10px entre les images */
+    }
+    .alignement_horizontal_form {
+        flex-direction: column; /* Aligne les colonnes en vertical */
+        align-items: flex-start; /* Aligne les éléments à gauche */
+    }
+
+    .alignement_verticale {
+        width: 100%; /* Assure que les champs occupent toute la largeur */
+    }
+
+    .nbre_fraise,
+    .nbre_pamplemousse,
+    .nbre_framboise,
+    .nbre_citron {
+        width: auto; /* Ajuste la largeur si nécessaire */
+    }
+    .barre_verticale {
+        width: 100%; /* Ajuste la largeur pour qu'elle s'étende sur toute la largeur */
+        height: 0; /* Enlève la hauteur pour qu'elle soit invisible */
+        border-top: 1px solid #ccc; /* Bordure en haut pour remplacer la barre verticale */
+        margin: 10px 0; /* Ajoute un espace au-dessus et en dessous de la barre */
+    }
+}

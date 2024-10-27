@@ -1,0 +1,94 @@
+/*
+Theme Name: OceanWP Child
+Theme URI: https://localhost/P6%20_PLANTY/wordpress/ 
+Template: oceanwp
+Author: OceanWP
+Author URI: https://oceanwp.org/about-oceanwp/
+Description: OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you to create almost any type of website such a blog, portfolio, business website and WooCommerce storefront with a beautiful &amp; professional design. Very fast, responsive, RTL &amp; translation ready, best SEO practices, unique WooCommerce features to increase conversion and much more. You can even edit the settings on tablet &amp; mobile so your site looks good on every device. Work with the most popular page builders as Elementor, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, etc... Developers will love his extensible codebase making it a joy to customize and extend. Best friend of Elementor &amp; WooCommerce. Looking for a Multi-Purpose theme? Look no further! Check the demos to realize that it's the only theme you will ever need: https://oceanwp.org/demos/
+Tags: two-columns,right-sidebar,footer-widgets,blog,news,custom-background,custom-menu,post-formats,rtl-language-support,sticky-post,editor-style,threaded-comments,translation-ready,buddypress,custom-colors,featured-images,full-width-template,theme-options,e-commerce,block-styles,wide-blocks,accessibility-ready
+Version: 3.5.8.1722614008
+Updated: 2024-08-02 17:53:28
+
+*/
+.submit-rencontrer {
+    width: 200px;
+    /* Ajustez la largeur selon vos besoins */
+    padding-top: 30px;
+}
+
+.admin {
+    display: flex;
+
+}
+
+.quantities-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* Espace entre la section des quantités et le reste du formulaire */
+}
+
+.cf7-ligne-deux-colonnes {
+    font-family: Syne;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.column-left {
+    border-right: 1px solid white;
+    /* Correction de l'espace avant px */
+    padding-right: 85px;
+    width: 45%;
+}
+
+.column-right {
+    padding-left: 85px;
+    width: 45%;
+}
+
+.form-title {
+    /* Correction : ajout d'un point avant form-title pour le class selector */
+    font-family: Syne;
+    font-size: 30px;
+    /* Correction de l'espace avant px */
+    font-weight: 700;
+    text-align: left;
+}
+
+.quantity-column {
+    flex: 1;
+    /* Chaque colonne prend une part égale de l'espace disponible */
+    margin: 0 10px;
+    /* Espacement latéral entre les colonnes */
+}
+
+.quantity-column input[type="number"] {
+    width: 100%;
+    /* Remplir toute la largeur de la colonne */
+    padding: 8px;
+    /* Espace à l'intérieur du champ */
+    border: 1px solid #ccc;
+    /* Bordure du champ */
+    border-radius: 4px;
+    /* Coins arrondis */
+}
+
+.cf7-ligne {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-commander {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* Espace au-dessus du bouton de soumission */
+    padding-top: 40px;
+    /* Espacement supplémentaire */
+    padding-left: 75px;
+    /* Espacement supplémentaire */
+}
