@@ -234,6 +234,7 @@ input[type="submit"]:hover {
     /* Assure que le bouton est un élément de bloc */
     margin: 0 auto !important;
     /* Centre le bouton */
+    text-transform: capitalize;
 }
 
 /* Responsive styles */
