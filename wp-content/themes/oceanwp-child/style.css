@@ -202,7 +202,6 @@ input[type="submit"] {
     /* Utilisation de flexbox */
     justify-content: center !important;
     /* Centre le contenu horizontalement */
-    /* Centre le contenu horizontalement */
 }
 
 input[type="submit"]:hover {
@@ -239,104 +238,197 @@ input[type="submit"]:hover {
 
 /* Responsive styles */
 /* Style par défaut (pour les grands écrans) */
-body {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-}
 
 /* Pour les écrans larges (ordinateurs de bureau) */
 @media screen and (min-width: 1200px) {
     body {
-        font-size: 18px;
+        font-size: 18px; /* Taille de police pour les grands écrans */
+        margin: 0; /* Élimine les marges par défaut */
+        padding: 0; /* Élimine les paddings par défaut */
     }
 }
 
-/* Pour les tablettes (portrait et paysage) */
-@media screen and (max-width: 1200px) and (min-width: 768px) {
+/* Pour les tablettes et écrans de moins de 1200px */
+@media screen and (max-width: 1200px) {
     body {
-        font-size: 16px;
+        font-size: 16px; /* Taille de police pour les petits écrans */
+        margin: 0; /* Élimine les marges par défaut */
+        padding: 0; /* Élimine les paddings par défaut */
     }
 
     .menu-link {
         padding: 10px;
+    }
+    .hfe-site-logo-img {
+        margin-bottom: 20px; /* Espacement sous le logo */
+    }
+    .container_principal {
+        width: 90%; /* Largeur adaptée pour mobile */
+        max-width: none; /* Retire la limite de largeur pour le mobile */
+        margin: 0 auto; /* Assure que le conteneur est centré */
+    }
+    .attachment-large{
+        justify-content: center;
+    }
+
+.section-title2{
+    margin-top: 30px; /* Ajustez selon vos besoins */
+}
+    .commande {
+        font-size: 24px; /* Taille ajustée pour les petits écrans */
+        padding-left: 10px; /* Ajustement de l'espace à gauche pour mobile */
+        width: 100%; /* Prend toute la largeur disponible */
+        margin-left: 30px;
+    }
+
+    /* Aligner les images et les cases de quantité en colonne */
+    .alignement_horizontal {
+        display: flex;
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante */
+        justify-content: center; /* Centre les éléments horizontalement */
+    }
+
+    .alignement_verticale_vignette {
+        width: calc(50% - 10px); /* Chaque vignette prend 50% de la largeur, moins un espacement */
+        text-align: center; /* Centre le texte à l'intérieur des vignettes */
+        margin: 0;
+    }
+
+    /* Ajustement de la taille des images */
+    .alignement_verticale_vignette img {
+        width: 80%; /* Les images prennent toute la largeur de leur conteneur */
+        height: auto; /* Garde les proportions des images */
+    }
+
+    /* Style des cases de quantité */
+    .nbre_fraise,
+    .nbre_pamplemousse,
+    .nbre_framboise,
+    .nbre_citron {
+        width: 60px; /* Largeur adaptée pour mobile */
+        height: 40px; /* Hauteur adaptée pour mobile */
+        text-align: center; /* Centre le texte à l'intérieur */
+        font-size: 16px; /* Taille du texte */
+        margin-bottom: 10px; /* Espace entre chaque case */
+    }
+
+    /* Ajustement pour les champs de formulaire */
+    .alignement_horizontal_form {
+        display: flex;
+        flex-direction: column; /* Aligne les champs de formulaire verticalement */
+        align-items: center; /* Centre le formulaire */
+        width: 100%; /* S'assurer que les champs prennent toute la largeur */
+        margin: 0 auto; /* Centre le formulaire */
+    }
+
+    .barre_horizontale{
+        width: 90%;
+        height: 0px; /* Réduit la hauteur pour cacher la barre */
+        border-top: 1px solid #ccc; /* Changer la bordure en haut pour simuler la barre horizontale */
+        
+    }
+    /* Style pour la barre verticale */
+    .barre_verticale {
+        width: 80%; /* Prend toute la largeur */
+        height: 0px; /* Réduit la hauteur pour cacher la barre */
+        border-top: 1px solid #ccc; /* Changer la bordure en haut pour simuler la barre horizontale */
+        margin: 20px 0; /* Ajoute de l'espace autour */
     }
 }
 
 /* Pour les téléphones en mode paysage */
 @media screen and (max-width: 768px) {
     body {
-        font-size: 14px;
+        font-size: 14px; /* Taille de police pour les petits téléphones */
+    }
+    .container_principal {
+        width: 80%; /* Largeur adaptée pour mobile */
+        margin: 0 auto; /* Centre le conteneur */
+        flex-direction: column; /* Permet d'aligner les éléments en colonne */
+    }
+
+    .hfe-site-logo-img {
+        margin-bottom: 20px; /* Espacement sous le logo */
     }
 
     .menu-link {
-        padding: 8px;
+        padding: 8px; /* Réduit le padding pour les petits écrans */
     }
 }
 
 /* Pour les téléphones en mode portrait */
 @media screen and (max-width: 480px) {
-    body {
-        font-size: 12px;
+    .container_principal {
+        width: 90%; /* Largeur adaptée pour mobile */
+        max-width: none; /* Retire la limite de largeur pour le mobile */
+        margin: 0 auto; /* Assure que le conteneur est centré */
     }
 
-    .menu-link {
-        padding: 5px;
+    .commande {
+        font-size: 24px; /* Taille ajustée pour les petits écrans */
+        padding-left: 10px; /* Ajustement de l'espace à gauche pour mobile */
+        width: 100%; /* Prend toute la largeur disponible */
+        margin-left: 90px; /* Ajustement de la marge à gauche */
     }
 
-    /* Ajoute une règle pour les petits écrans */
+    /* Aligner les images et les cases de quantité en colonne */
+    .alignement_horizontal {
+        display: flex;
+        flex-direction: column; /* Aligner les éléments verticalement */
+        align-items: center; /* Centrer les éléments */
+    }
 
+    /* Style des images pour les petits écrans */
     .alignement_verticale_vignette {
         display: flex;
-        flex-direction: column;
-        /* Aligne les éléments en colonne */
-        align-items: center;
-        /* Centre les éléments horizontalement */
+        flex-direction: column; /* Empiler les images en colonne */
+        align-items: center; /* Centrer les images */
+        margin-bottom: 20px; /* Espacement entre chaque élément */
     }
 
+    /* Ajuster la taille des images */
     .alignement_verticale_vignette img {
-        width: 100%;
-        /* Ajuste la largeur pour qu'elle prenne tout l'espace */
-        height: auto;
-        /* Maintient les proportions */
-        margin-bottom: 10px;
-        /* Espace entre les images et le nombre */
+        width: 80%; /* Ajuste la largeur des images */
+        height: auto; /* Garde les proportions des images */
+        margin-bottom: 10px; /* Espacement sous chaque image */
     }
 
-    .alignement_horizontal_form {
-        flex-direction: column;
-        /* Aligne les colonnes en vertical */
-        align-items: flex-start;
-        /* Aligne les éléments à gauche */
-    }
-
-    .alignement_verticale {
-        width: 100%;
-        /* Assure que les champs occupent toute la largeur */
-    }
-
+    /* Style des cases de quantité */
     .nbre_fraise,
     .nbre_pamplemousse,
     .nbre_framboise,
     .nbre_citron {
-        width: auto;
-        /* Ajuste la largeur si nécessaire */
-        height: auto;
-        /* Permet à la hauteur de s'ajuster également */
-        text-align: center;
-        /* Centre le texte */
-        font-size: 16px;
-        /* Taille du texte */
+        width: 60px; /* Largeur adaptée pour mobile */
+        height: 40px; /* Hauteur adaptée pour mobile */
+        text-align: center; /* Centre le texte à l'intérieur */
+        font-size: 16px; /* Taille du texte */
+        margin-bottom: 10px; /* Espace entre chaque case */
     }
 
+    /* Alignement vertical du formulaire en deux colonnes */
+    .alignement_horizontal_form {
+        display: flex;
+        flex-direction: column; /* Aligne les champs de formulaire verticalement */
+        align-items: center; /* Centre le formulaire */
+    }
+
+    /* Style des champs de formulaire */
+    .alignement_verticale {
+        width: 80%; /* Ajuste la largeur des champs pour s'adapter à l'écran */
+        margin-bottom: 20px; /* Espacement entre chaque champ */
+    }
+
+    /* Style pour la barre verticale */
     .barre_verticale {
-        width: 100%;
-        /* Ajuste la largeur pour qu'elle s'étende sur toute la largeur */
-        height: 0;
-        /* Enlève la hauteur pour qu'elle soit invisible */
-        border-top: 1px solid #ccc;
-        /* Bordure en haut pour remplacer la barre verticale */
-        margin: 10px 0;
-        /* Ajoute un espace au-dessus et en dessous de la barre */
+        width: 100%; /* Prend toute la largeur */
+        height: 0px; /* Réduit la hauteur pour cacher la barre */
+        border-top: 1px solid #ccc; /* Changer la bordure en haut pour simuler la barre horizontale */
+        margin: 20px 0; /* Ajoute de l'espace autour */
+    }
+
+    .alignement_horizontal,
+    .alignement_verticale {
+        width: 100%; /* S'assurer que les alignements prennent toute la largeur du conteneur */
+        padding: 0 10px; /* Ajouter un peu de padding pour espacer le contenu */
     }
 }
