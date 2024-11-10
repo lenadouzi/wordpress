@@ -368,10 +368,15 @@ input[type="submit"]:hover {
     .commande {
         font-size: 24px; /* Taille ajustée pour les petits écrans */
         padding-left: 10px; /* Ajustement de l'espace à gauche pour mobile */
-        width: 100%; /* Prend toute la largeur disponible */
-        margin-left: 90px; /* Ajustement de la marge à gauche */
+        width: 90%; /* Prend toute la largeur disponible */
+        margin: 0 !important;
+        text-align: center;
+  
     }
-
+    .section-title{
+        margin: 0 !important;
+    }
+    
     /* Aligner les images et les cases de quantité en colonne */
     .alignement_horizontal {
         display: flex;
